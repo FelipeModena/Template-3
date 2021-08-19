@@ -1,0 +1,145 @@
+:root {
+  /* Cores do Painel */
+  --cor-padrao-header-fundo: rgb(255, 255, 255);
+  --cor-padrao-header-fonte: rgb(0, 0, 0);
+
+  --cor-padrao-logotipo: rgb(20, 35, 165);
+  
+  --cor-padrao-header-transparente:rgba(194, 16, 16, 0.138);
+
+  --cor-primaria-fundo: #000000;
+  --cor-primaria-fonte: #ffffff;
+
+  --cor-secundaria-fundo: #ffffff;
+  --cor-secundaria-fonte: #000000;
+}
+
+
+@font-face {
+  font-family: 'Oswald-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fontes/Oswald/static/Oswald-Regular.ttf') format('truetype');
+}
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald-Regular";
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fontes/WorkSans/static/WorkSans-Regular.ttf') format('truetype');
+}
+
+body span,
+p,label,a {
+  font-family: "WorkSans-Regular";
+
+}
+
+
+li,
+a {
+  color: var(--cor-secundaria-fonte);
+  text-decoration: none;
+}
+a:visited{
+  color: var(--cor-secundaria-fonte);
+  text-decoration: none;
+}
+li,
+a:hover {
+  text-decoration: none;
+  border: none;
+}
+
+.logotipo-cor {
+  color: var(--cor-padrao-logotipo);
+}
+
+.cor-fundo-primaria {
+  background: var(--cor-primaria-fundo);
+  color: var(--cor-primaria-fonte);
+}
+
+.cor-fundo-secundaria {
+  background: var(--cor-secundaria-fundo);
+  color: var(--cor-secundaria-fonte);
+}
+.cor-fundo-primaria a{
+  background: var(--cor-primaria-fundo);
+  color: var(--cor-primaria-fonte);
+}
+
+.cor-fundo-secundaria a{
+  background: var(--cor-secundaria-fundo);
+  color: var(--cor-secundaria-fonte);
+}
+
+.hover-padrao{
+  transition: 0.2s;
+}
+.hover-padrao:hover{
+  transition: 0.2s;
+  opacity: 70%;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.centraliza {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-azul{
+  background: #0e87bc;
+  border: none;
+  padding: 9px;
+  width: 100%;
+}
+.btn-transparente-primaria{
+  background: none;
+  border: 2px solid black;
+  padding: 12px;
+  color: black;
+
+}
+.btn-transparente-secundaria{
+  background: none;
+  border: 2px solid white;
+  padding: 12px;
+  color: white;
+
+}
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.8s;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.layout-enter-active, .layout-leave-active {
+  transition: opacity .8s
+}
+.layout-enter, .layout-leave-active {
+  opacity: 0
+}
